@@ -2,36 +2,14 @@ import React from "react";
 import {
   StyleSheet,
   View,
-  Text,
-  Image,
-  TouchableWithoutFeedback,
+  Text
 } from "react-native";
-import { useNavigation } from "@react-navigation/native";
-import { capitalize } from "lodash";
 
-export default function PokemonCard(props) {
-  const { pokemon } = props;
-
-  const navigation = useNavigation();
-
-  const goToPokemon = () => {
-    navigation.navigate("Pokemon", { id: pokemon.id });
-  };
-
+export default function PokemonCard() {
   return (
-    <TouchableWithoutFeedback onPress={goToPokemon}>
-      <View style={styles.card}>
-        <View style={styles.spacing}>
-          <View style={bgStyles}>
-            <Text style={styles.number}>
-              #{`${pokemon.order}`.padStart(3, 0)}
-            </Text>
-            <Text style={styles.name}>{capitalize(pokemon.name)}</Text>
-            <Image source={{ uri: pokemon.image }} style={styles.image} />
-          </View>
-        </View>
-      </View>
-    </TouchableWithoutFeedback>
+    <View>
+      <Text style={styles.number}> Hola component</Text>
+    </View>
   );
 }
 
@@ -53,7 +31,7 @@ const styles = StyleSheet.create({
     position: "absolute",
     right: 10,
     top: 10,
-    color: "#fff",
+    color: "black",
     fontSize: 11,
   },
   name: {
