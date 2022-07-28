@@ -1,6 +1,7 @@
 {
-  "name": "generic-components",
+  "name": "generic-components-cs3",
   "description": "Generics components created by CS3",
   "author": "CS3 Team",
-  "version": "1.0.1"
+  "version": "1.0.1",
+  "homepage": "https://github.com/JMovilla/prueba-component"
 }
