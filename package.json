@@ -1,8 +1,6 @@
 {
   "name": "generic-components",
   "description": "Generics components created by CS3",
-  "types": "./types/index.d.ts",
   "author": "CS3 Team",
-  "version": "1.0.1",
-  "homepage": "https://github.com/JMovilla/prueba-component#readme",
+  "version": "1.0.1"
 }
